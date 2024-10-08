@@ -10,11 +10,15 @@
       "require": "./lib/index.js"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntChr/DatePicker-lib.git"
+  },
   "scripts": {
     "build": "babel src --out-dir lib --copy-files"
   },
   "keywords": [],
-  "author": "",
+  "author": "antoine.ch",
   "license": "ISC",
   "dependencies": {
     "datepicker-lib-ac": "^0.1.0",
