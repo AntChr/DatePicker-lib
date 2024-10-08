@@ -1,21 +1,31 @@
 {
-  "name": "datepicker-lib",
-  "version": "1.0.0",
+  "name": "datepicker-lib-ac",
+  "version": "0.1.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir lib --copy-files"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "datepicker-lib-ac": "^0.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-react": "^6.24.1"
-  }
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }

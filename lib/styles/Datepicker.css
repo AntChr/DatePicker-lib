@@ -1,0 +1,35 @@
+.date-picker-input-container {
+    position: relative;
+  }
+  
+  input {
+    padding: 0.5rem;
+    padding-right: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    cursor: pointer;
+  }
+  
+  .calendar-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .calendar-icon:hover {
+    color: #007bff;
+  }
+  
+  .calendar-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+  
