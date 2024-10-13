@@ -6,7 +6,6 @@ No other third party libraries just only standard built-in Date objects
 
 <a href="https://www.npmjs.com/package/datepicker-lib-ac"><img alt="npm" src="https://img.shields.io/npm/dw/datepicker-lib-ac"></a>
 <a href="https://www.npmjs.com/package/datepicker-lib-ac"><img alt="npm" src="https://img.shields.io/npm/v/datepicker-lib-ac"></a>
-<a href="https://www.npmjs.com/package/datepicker-lib-ac"><img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/datepicker-lib-ac"></a>
 <a href="https://www.npmjs.com/package/datepicker-lib-ac">
 <img alt="Maintenance Status" src="https://img.shields.io/badge/maintenance-active-green.svg" />
 </a>
@@ -26,7 +25,7 @@ import { useState } from 'react'
 const Example = () => {
   const [startDate, setStartDate] = useState('')
   return (
-    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+    <DatePicker label="Start Date" selectedDate={startDate} onDateChange={(date) => setStartDate(date)} headerBackgroundColor="#0f659e" />
   )
 }
 
